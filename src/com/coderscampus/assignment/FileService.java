@@ -16,7 +16,6 @@ public class FileService {
 		String line;
 		try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
 			while ((line = reader.readLine()) != null) {
-				reader.readLine();
 				numbers.add(line);
 			}
 		} catch (IOException e) {
